@@ -12,7 +12,17 @@ public class Account {
     
     //필요한 메소드 작성
 
-    public void deposit() {
-    	
+    public void deposit(int balance) {
+    	this.balance = this.balance + balance;
+    }
+    
+    public void withdraw(int balance) {
+    	this.balance = this.balance - balance;
+    }
+    
+    public void showBalance() {
+    	System.out.println(balance);
     }
 }
+
+
